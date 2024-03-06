@@ -1,0 +1,334 @@
+:root{
+--coral: #ef8354ff;
+--night: #141414ff;
+--antiflash-white: #eef0f2ff;
+}
+
+body {
+    font-family: quicksand, sans-serif;
+    background-color: var(--antiflash-white);
+    margin: 0;
+}
+
+.navbar {
+    background-color:var(--night);
+    color: var(--antiflash-white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
+}
+
+.brand {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.navbar-right .nav-link {
+    margin-left: 50px;
+    text-decoration: none;
+    padding: 30px 20px;
+    color: inherit;
+    padding: 5px 10px; 
+    transition: background-color 0.3s; 
+  }
+
+  .navbar-right .nav-link:hover {
+    background-color: var(--coral);
+    padding: 30px;
+    text-decoration: none;
+    transition: 0.3.s ease 0.2s;
+  }
+    
+
+  .footer {
+    background-color:var(--night); 
+    color: var(--antiflash-white);
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .footer-column {
+    flex: 1;
+    margin: 0 100px;
+  }
+  
+  .footer-column h3 {
+    margin-bottom: 10px;
+  }
+  /* if window is scaled smaller, make margin smaller */
+  @media (max-width: 900px) {
+    .footer-column {
+        margin: 0 20px;
+    }
+}
+
+  /*************** welcome container top of main page **********************/
+
+  .welcome-container {
+    position: relative;
+    text-align: center;
+    height: 100vh; /* Set container height to viewport height */
+    overflow: hidden; /* Hide overflow content */
+}
+
+.welcome-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("images/indian-food.jpg");
+    background-size: cover; /* Cover the entire container */
+    background-repeat: no-repeat; /*Prevent image repeating */
+    background-position: center; /* Center the background */
+    filter: brightness(50%);
+}
+
+.welcome-text {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--antiflash-white);
+    font-size: 60px;
+    font-weight: 500;
+}
+
+.welcome-btn {
+    position: absolute;
+    bottom: 40%; /* Adjust bottom position as per your preference */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--coral);
+    color: var(--antiflash-white);
+    padding: 20px 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.welcome-btn:hover {
+    background-color: var(--antiflash-white);
+    color: var(--coral);
+    transition: background-color 0.3s;
+}
+
+
+ /******************* second part main page *********************/
+ .second-container {
+  display: flex;
+  padding: 100px;
+  margin-bottom: 100px;
+ }
+
+
+ /* in case window get's scaled smaller than 900px wide, change flex direction*/
+ @media (max-width: 900px) {
+  .second-container {
+      flex-direction: column;
+  }
+  
+}
+
+ .text-container-left {
+  padding: 10px;
+  /*border: 5px solid #ccc; /* Just for demonstration */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically center align the content */
+}
+
+/* Make the words wrap differently if to small*/
+@media (min-width: 768px) {
+  .text-container-left {
+      word-wrap: break-word;
+  }
+}
+ 
+ .why-us {
+  margin-top: 0;
+  margin-bottom: 60px;
+  font-size: 35px;
+  }
+
+.about-us{
+  font-size: 25px;
+  line-height: 1.5;
+  margin-bottom: 0px;
+}
+
+.our-name{
+  font-size: 30px;
+  color: var(--coral);
+      word-break: break-word;
+      width: 100%;
+      margin-top: 10px;
+      margin-bottom: 0;
+  }
+
+.empty-space {
+  flex: 0.5;
+}
+
+.text-container-left, .slider-container {
+  flex: 10;
+  padding: 10px;
+}
+
+
+/* carousel */
+#slider {
+  overflow: hidden;
+  max-width: 900px;
+  max-height: 900px;
+}
+
+#slider figure {
+  position:relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 20s slider infinite;
+}
+
+#slider figure img{
+  float: left;
+  width: 20%;
+  max-width: 900px;
+}
+
+@keyframes slider {
+	0% {
+		left: 0;
+	}
+	20% {
+		left: 0;
+	}
+	25% {
+		left: -100%;
+	}
+	45% {
+		left: -100%;
+	}
+	50% {
+		left: -200%;
+	}
+	70% {
+		left: -200%;
+	}
+	75% {
+		left: -300%;
+	}
+	95% {
+		left: -300%;
+	}
+	100% {
+		left: -400%;
+	}
+}
+/* end carousel */
+
+/******************** reservation page *************** */
+
+.reservationTitle{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 1.2em;      
+}
+
+.reservation{
+  min-height: 100vh;
+  color: white;
+  background: url(images/bg1.jpg); 
+  background-size: 100% 100%;
+}
+form{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+margin-top: 20px;
+gap: 1rem;
+}
+input p {
+font-size: 26px;
+font-weight: lighter;
+margin-bottom: 10px;
+}
+.first,.mid,.last{
+display: flex;
+align-items: center;
+width: max-content;
+gap: 10rem;
+}
+form .input{
+  width: 200px;
+}
+
+input, .input-i{
+outline: none;
+border: 1px solid #ffc901;
+width: 200px;
+background-color: transparent;
+display: flex;
+align-items: center;
+border-radius: 5px;
+color: white;
+}
+
+::placeholder{
+color: #fff;
+}
+
+input{
+padding: 5px;
+}
+
+.input-i input{
+border: none;
+padding-right: 10px;
+}
+.input-i{
+padding-right: 20px;
+}
+select {
+width: 50%;
+padding: 5px;
+background-color: transparent;
+color: white;
+border: 0;
+outline: none;
+cursor: pointer;
+}
+option {
+color: black;
+padding-top: 10px;
+} 
+::-webkit-calendar-picker-indicator{
+cursor: pointer;
+background-color: #ffc901;
+padding: 3px;
+border-radius: 3px;
+}
+.btn{
+background-color: #ffc901;
+border: none;
+color: black;
+padding: 10px 25px 10px 25px;
+font-size: 15px;
+border-radius: 10px;
+cursor: pointer;
+font-weight: 550;
+
+}
+.btn:hover{
+opacity: 0.8;
+}
+
+/******************* end of reservation page  *******************/
