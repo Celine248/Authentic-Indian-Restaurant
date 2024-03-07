@@ -235,101 +235,106 @@ body {
 /******************** reservation page *************** */
 
 .reservationTitle{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 600;
-  font-size: 1.2em;      
-}
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 120px;
+        font-weight: 600;
+        font-size: 1.2em;      
+      }
 
-.reservation{
-  min-height: 100vh;
-  color: white;
-  background: url(images/bg1.jpg); 
-  background-size: 100% 100%;
-}
-form{
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
-margin-top: 20px;
-gap: 1rem;
-}
-input p {
-font-size: 26px;
-font-weight: lighter;
-margin-bottom: 10px;
-}
-.first,.mid,.last{
-display: flex;
-align-items: center;
-width: max-content;
-gap: 10rem;
-}
-form .input{
-  width: 200px;
-}
+      .reservation{
+        min-height: 50vh;
+        color: #eef0f2ff;
+        background: url(images/bg1.jpg); 
+        background-size: cover;
+      }
+     form{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin-top: 20px;
+      gap: 1rem;
+     }
+     .input p{
+      font-size: 20px;
+      font: weight 50px;
+      margin-bottom: 15px;
+     }
+     .first,.mid,.last{
+      display: flex;
+      align-items: center;
+      width: 800px;
+      gap: 15rem;
+      }
+      form .input{
+        width: 200px;
+      }
+     
+     input, .input-i{
+      outline: none;
+      border: 1px solid #ef8354ff;
+      width: 200px;
+      background-color: transparent;
+      display: flex;
+      align-items: center;
+      border-radius: 5px;
+      color: #eef0f2ff;
+      ;
+     }
 
-input, .input-i{
-outline: none;
-border: 1px solid #ffc901;
-width: 200px;
-background-color: transparent;
-display: flex;
-align-items: center;
-border-radius: 5px;
-color: white;
-}
+     ::placeholder{
+      color: #eef0f2ff;
+     }
 
-::placeholder{
-color: #fff;
-}
-
-input{
-padding: 5px;
-}
-
-.input-i input{
-border: none;
-padding-right: 10px;
-}
-.input-i{
-padding-right: 20px;
-}
-select {
-width: 50%;
-padding: 5px;
-background-color: transparent;
-color: white;
-border: 0;
-outline: none;
-cursor: pointer;
-}
-option {
-color: black;
-padding-top: 10px;
-} 
-::-webkit-calendar-picker-indicator{
-cursor: pointer;
-background-color: #ffc901;
-padding: 3px;
-border-radius: 3px;
-}
-.btn{
-background-color: #ffc901;
-border: none;
-color: black;
-padding: 10px 25px 10px 25px;
-font-size: 15px;
-border-radius: 10px;
-cursor: pointer;
-font-weight: 550;
-
-}
-.btn:hover{
-opacity: 0.8;
-}
+     input{
+      padding: 5px;
+     }
+     
+     .input-i input{
+      border: none;
+      padding-right: 10px;
+     }
+     .input-i{
+      padding-right: 20px;
+      content:attr(placeholder);
+     }
+     select {
+      width: 50%;
+      padding: 5px;
+      background-color: transparent;
+      color: #eef0f2ff;
+      border: 0;
+      outline: none;
+      cursor: pointer;
+     }
+     option {
+      color: black;
+      padding-top: 10px;
+    } 
+     ::-webkit-calendar-picker-indicator{
+      cursor: pointer;
+      background-color: #ef8354ff;
+      padding: 3px;
+      border-radius: 3px;
+     }
+     .btn{
+      background-color: #ef8354ff;
+      border: none;
+      color: #141414;
+      padding: 10px 25px 10px 25px;
+      font-size: 15px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: 550;
+      margin-bottom: 40px;
+      margin-top: 20px;
+      margin-right: 120px;
+     }
+     .btn:hover{
+      opacity: 0.8;
+     }
 
 /******************* end of reservation page  *******************/
 
