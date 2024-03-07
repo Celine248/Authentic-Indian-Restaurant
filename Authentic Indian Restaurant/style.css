@@ -332,3 +332,85 @@ opacity: 0.8;
 }
 
 /******************* end of reservation page  *******************/
+ /*-------------------------Menu page style---------------------------------------------------------*/
+ .menu{
+  background: url(images/pexels-shantanu-pal-2679501\(1\).png) no-repeat center center /cover;
+  width: 100%;
+  height: 1600px;
+  display:flex;
+
+}
+.title{
+  color: var(--antiflash-white);
+  font-size: 65px;
+  padding: 20px;
+  margin: 15px;
+  text-decoration-color: var(--coral);  
+}
+.menu-filter ul li{
+display: inline-block;
+color: var(--antiflash-white);
+text-transform: uppercase;
+letter-spacing: 1px;
+font-size: 17px;
+font-weight: bolder;
+margin-bottom: 40px;
+}
+.menu-filter ul li a{
+  padding: 10px 20px;
+  border: 2px solid var(--coral);
+  border-radius: 0;
+  text-decoration: none;
+  cursor: pointer;
+}
+.menu-filter ul li a:hover{
+  background-color: var(--coral);
+  border: 1px solid var(--coral);
+  padding: 17px;
+}
+.menu-filter li a:active{
+  background-color: var(--coral);
+  border: 1px solid var(--coral);
+  padding: 17px;
+  transition: 0.3.s ease 0.2s;
+}
+/*---------------------Menu Restaurant-------------*/
+.menu-restaurant{
+  padding: 20px;
+  width: 47%;
+  justify-content: space-between;
+  float: left;
+  height:120px;
+  position: relative;
+  align-items: center;
+}
+.menu-restaurant .menu-title{
+  float: left;
+  text-transform: capitalize;
+  font-size: 30px;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  color: var(--coral);
+
+}
+.menu-restaurant span.menu-prices{
+  font-weight: bolder;
+  position: absolute;
+  right: 0;
+  color: var(--coral);
+  font-size: 34px;
+}
+.menu-restaurant span.menu-subtitle{
+  display: block;
+  float: left;
+  color: var(--antiflash-white);
+  font-size: 24px;
+  font-weight: 600;
+}
+.menu-restaurant span.clearfix{
+  position: relative;
+  display: block;
+
+}
+/*---------------------------------------------End of Menu page---------------------------------------------------------*/
+ 
