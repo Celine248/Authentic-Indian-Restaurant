@@ -1,28 +1,86 @@
-.contact-main {
-display: flex;
-flex-direction: column;
-align-items: center;
-}
 .contact-section {
-display: flex;
-flex-direction: column;
-align-items: center;
-text-align: center;
-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  background-image: url("images/whitebowls.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
+.contact-info-wrapper {
+  margin-bottom: 32px;
+}
+.map-form-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.contact-form-input {
+    width: 50%;
+    border-color: #ef8354ff;
+    padding-left: 2%;
+    border-width: 2px;
+    color: black;
+}
+.contact-form-input::placeholder{
+    color:black
+}
+.contact-form-text {
+    width: 50%;
+    border-color: #ef8354ff;
+    border-radius: 8px;
+    border-width: 2px;
+}
+.form-button {
+    background-color: #ef8354ff;
+    border-color: #ef8354ff;
+    border-style: solid;
+    border-radius: 6px;
+    width: 30%;
+    height: 30px;
+    font-size: 10px;
+}
 .info-list {
-    list-style: none;
-    padding: 0px;
+  list-style: none;
+  padding: 0px;
 }
 
 .contacts-wrapper {
-    width: 100%;
-    
+  border-color: #ef8354ff;
+  width: 100%;
+  border-style: solid;
+  border-width: 0px 0px 2px 0px;
 }
 
 .orange-background {
-    background-color:#ef8354ff ;
-    width: 100%;
-    padding: 25px 0px ;
+  width: 100%;
+  padding: 25px 0px;
+}
+
+.contact-map {
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  .contact-section {
+    flex-direction: row;
+    height: 1000px;
+    justify-content: space-evenly;
+    padding: 40px 0px;
+  }
+  .map-form-wrapper {
+    width: 45%;
+    height: 100%;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+  }
+
+  .contact-info-wrapper {
+    width: 45%;
+  }
+  .form-button{
+    font-size: 15px;
+    width: 40%;
+  }
 }
