@@ -332,6 +332,10 @@ opacity: 0.8;
 }
 
 /******************* end of reservation page  *******************/
+
+
+
+
  /*-------------------------Menu page style---------------------------------------------------------*/
  .menu{
   background: url(images/pexels-shantanu-pal-2679501\(1\).png) no-repeat center center /cover;
@@ -411,6 +415,29 @@ margin-bottom: 40px;
   position: relative;
   display: block;
 
+}
+@media  screen and (max-width:768px) {
+
+  .menu{
+    height: 100%;
+  }
+  .menu-restaurant{
+    width: 90%;
+    height: 140px;
+    
+  }
+  .menu-restaurant .menu-title{
+    font-size: 25px;
+  }
+  .menu-restaurant span.menu-prices{
+    font-size: 25px;
+    float: right;
+    position: absolute;
+    justify-content: space-between;
+  }
+  .menu-restaurant span.menu-subtitle{
+    font-size: 20px;
+  }
 }
 /*---------------------------------------------End of Menu page---------------------------------------------------------*/
  
