@@ -22,6 +22,8 @@ body {
 .brand {
     font-size: 1.2em;
     font-weight: 600;
+    color: var(--antiflash-white);
+    text-decoration: none;
 }
 
 .navbar-right .nav-link {
@@ -235,114 +237,110 @@ body {
 /******************** reservation page *************** */
 
 .reservationTitle{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-right: 120px;
-        font-weight: 600;
-        font-size: 1.2em;      
-      }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 120px;
+  font-weight: 600;
+  font-size: 1.2em;      
+}
 
-      .reservation{
-        min-height: 50vh;
-        color: #eef0f2ff;
-        background: url(images/bg1.jpg); 
-        background-size: cover;
-      }
-     form{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      margin-top: 20px;
-      gap: 1rem;
-     }
-     .input p{
-      font-size: 20px;
-      font: weight 50px;
-      margin-bottom: 15px;
-     }
-     .first,.mid,.last{
-      display: flex;
-      align-items: center;
-      width: 800px;
-      gap: 15rem;
-      }
-      form .input{
-        width: 200px;
-      }
-     
-     input, .input-i{
-      outline: none;
-      border: 1px solid #ef8354ff;
-      width: 200px;
-      background-color: transparent;
-      display: flex;
-      align-items: center;
-      border-radius: 5px;
-      color: #eef0f2ff;
-      ;
-     }
+.reservation{
+  min-height: 50vh;
+  color: #eef0f2ff;
+  background: url(images/bg1.jpg); 
+  background-size: cover;
+}
+form{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+margin-top: 20px;
+gap: 1rem;
+}
+.input p{
+font-size: 20px;
+font: weight 50px;
+margin-bottom: 15px;
+}
+.first,.mid,.last{
+display: flex;
+align-items: center;
+width: 800px;
+gap: 15rem;
+}
+form .input{
+  width: 200px;
+}
 
-     ::placeholder{
-      color: #eef0f2ff;
-     }
+input, .input-i{
+outline: none;
+border: 1px solid #ef8354ff;
+width: 200px;
+background-color: transparent;
+display: flex;
+align-items: center;
+border-radius: 5px;
+color: #eef0f2ff;
+;
+}
 
-     input{
-      padding: 5px;
-     }
-     
-     .input-i input{
-      border: none;
-      padding-right: 10px;
-     }
-     .input-i{
-      padding-right: 20px;
-      content:attr(placeholder);
-     }
-     select {
-      width: 50%;
-      padding: 5px;
-      background-color: transparent;
-      color: #eef0f2ff;
-      border: 0;
-      outline: none;
-      cursor: pointer;
-     }
-     option {
-      color: black;
-      padding-top: 10px;
-    } 
-     ::-webkit-calendar-picker-indicator{
-      cursor: pointer;
-      background-color: #ef8354ff;
-      padding: 3px;
-      border-radius: 3px;
-     }
-     .btn{
-      background-color: #ef8354ff;
-      border: none;
-      color: #141414;
-      padding: 10px 25px 10px 25px;
-      font-size: 15px;
-      border-radius: 10px;
-      cursor: pointer;
-      font-weight: 550;
-      margin-bottom: 40px;
-      margin-top: 20px;
-      margin-right: 120px;
-     }
-     .btn:hover{
-      opacity: 0.8;
-     }
+::placeholder{
+color: #eef0f2ff;
+}
+
+input{
+padding: 5px;
+}
+
+.input-i input{
+border: none;
+padding-right: 10px;
+}
+.input-i{
+padding-right: 20px;
+content:attr(placeholder);
+}
+select {
+width: 50%;
+padding: 5px;
+background-color: transparent;
+color: #eef0f2ff;
+border: 0;
+outline: none;
+cursor: pointer;
+}
+option {
+color: black;
+padding-top: 10px;
+} 
+::-webkit-calendar-picker-indicator{
+cursor: pointer;
+background-color: #ef8354ff;
+padding: 3px;
+border-radius: 3px;
+}
+.btn{
+background-color: #ef8354ff;
+border: none;
+color: #141414;
+padding: 10px 25px 10px 25px;
+font-size: 15px;
+border-radius: 10px;
+cursor: pointer;
+font-weight: 550;
+margin-bottom: 40px;
+margin-top: 20px;
+margin-right: 120px;
+}
+.btn:hover{
+opacity: 0.8;
+}
 
 /******************* end of reservation page  *******************/
-
-
-
-
- /*-------------------------Menu page style---------------------------------------------------------*/
- .menu{
+/*-------------------------Menu page style---------------------------------------------------------*/
+.menu{
   background: url(images/pexels-shantanu-pal-2679501\(1\).png) no-repeat center center /cover;
   width: 100%;
   height: 1600px;
@@ -354,6 +352,7 @@ body {
   font-size: 65px;
   padding: 20px;
   margin: 15px;
+  text-decoration: underline;
   text-decoration-color: var(--coral);  
 }
 .menu-filter ul li{
@@ -421,28 +420,4 @@ margin-bottom: 40px;
   display: block;
 
 }
-@media  screen and (max-width:768px) {
-
-  .menu{
-    height: 100%;
-  }
-  .menu-restaurant{
-    width: 90%;
-    height: 140px;
-    
-  }
-  .menu-restaurant .menu-title{
-    font-size: 25px;
-  }
-  .menu-restaurant span.menu-prices{
-    font-size: 25px;
-    float: right;
-    position: absolute;
-    justify-content: space-between;
-  }
-  .menu-restaurant span.menu-subtitle{
-    font-size: 20px;
-  }
-}
 /*---------------------------------------------End of Menu page---------------------------------------------------------*/
- 
