@@ -1,0 +1,205 @@
+:root{
+--coral: #ef8354ff;
+--night: #141414ff;
+--antiflash-white: #eef0f2ff;
+}
+
+body {
+    font-family: quicksand, sans-serif;
+    background-color: var(--antiflash-white);
+    margin: 0;
+}
+
+.navbar {
+    background-color:var(--night);
+    color: var(--antiflash-white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
+}
+
+.brand {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: var(--antiflash-white);
+    text-decoration: none;
+}
+
+.navbar-right .nav-link {
+    margin-left: 50px;
+    text-decoration: none;
+    padding: 30px 20px;
+    color: inherit;
+    padding: 5px 10px; 
+    transition: background-color 0.3s; 
+  }
+
+  .navbar-right .nav-link:hover {
+    background-color: var(--coral);
+    padding: 30px;
+    text-decoration: none;
+    transition: 0.3.s ease 0.2s;
+  }
+    
+
+  .footer {
+    background-color:var(--night); 
+    color: var(--antiflash-white);
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .footer-column {
+    flex: 1;
+    margin: 0 100px;
+  }
+  
+  .footer-column h3 {
+    margin-bottom: 10px;
+  }
+  /* if window is scaled smaller, make margin smaller */
+  @media (max-width: 900px) {
+    .footer-column {
+        margin: 0 20px;
+    }
+}
+
+  /*************** welcome container top of main page **********************/
+
+  .welcome-container {
+    position: relative;
+    text-align: center;
+    height: 100vh; /* Set container height to viewport height */
+    overflow: hidden; /* Hide overflow content */
+}
+
+.welcome-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("images/indian-food.jpg");
+    background-size: cover; /* Cover the entire container */
+    background-repeat: no-repeat; /*Prevent image repeating */
+    background-position: center; /* Center the background */
+    filter: brightness(50%);
+}
+
+.welcome-text {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--antiflash-white);
+    font-size: 60px;
+    font-weight: 500;
+}
+
+.welcome-btn {
+    position: absolute;
+    bottom: 40%; /* Adjust bottom position as per your preference */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--coral);
+    color: var(--antiflash-white);
+    padding: 20px 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.welcome-btn:hover {
+    background-color: var(--antiflash-white);
+    color: var(--coral);
+    transition: background-color 0.3s;
+}
+
+
+
+/*-------------------------Menu page style---------------------------------------------------------*/
+.menu{
+  background: url(images/pexels-shantanu-pal-2679501\(1\).png) no-repeat center center /cover;
+  width: 100%;
+  height: 1600px;
+  display:flex;
+
+}
+.title{
+  color: var(--antiflash-white);
+  font-size: 65px;
+  padding: 20px;
+  margin: 15px;
+  text-decoration: underline;
+  text-decoration-color: var(--coral);  
+}
+.menu-filter ul li{
+display: inline-block;
+color: var(--antiflash-white);
+text-transform: uppercase;
+letter-spacing: 1px;
+font-size: 17px;
+font-weight: bolder;
+margin-bottom: 40px;
+}
+.menu-filter ul li a{
+  padding: 10px 20px;
+  border: 2px solid var(--coral);
+  border-radius: 0;
+  text-decoration: none;
+  cursor: pointer;
+}
+.menu-filter ul li a:hover{
+  background-color: var(--coral);
+  border: 1px solid var(--coral);
+  padding: 17px;
+}
+.menu-filter li a:active{
+  background-color: var(--coral);
+  border: 1px solid var(--coral);
+  padding: 17px;
+  transition: 0.3.s ease 0.2s;
+}
+/*---------------------Menu Restaurant-------------*/
+.menu-restaurant{
+  padding: 20px;
+  width: 47%;
+  justify-content: space-between;
+  float: left;
+  height:120px;
+  position: relative;
+  align-items: center;
+}
+.menu-restaurant .menu-title{
+  float: left;
+  text-transform: capitalize;
+  font-size: 30px;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  color: var(--coral);
+
+}
+.menu-restaurant span.menu-prices{
+  font-weight: bolder;
+  position: absolute;
+  right: 0;
+  color: var(--coral);
+  font-size: 34px;
+}
+.menu-restaurant span.menu-subtitle{
+  display: block;
+  float: left;
+  color: var(--antiflash-white);
+  font-size: 24px;
+  font-weight: 600;
+}
+.menu-restaurant span.clearfix{
+  position: relative;
+  display: block;
+
+}
+/*---------------------------------------------End of Menu page---------------------------------------------------------*/
