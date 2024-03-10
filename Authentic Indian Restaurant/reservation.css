@@ -83,7 +83,8 @@ body {
   min-height: 50vh;
   color: #eef0f2ff;
   background: url(images/bg1.jpg); 
-  background-size: cover;
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
 }
 form{
 display: flex;
