@@ -1,0 +1,175 @@
+:root{
+--coral: #ef8354ff;
+--night: #141414ff;
+--antiflash-white: #eef0f2ff;
+}
+
+body {
+    font-family: quicksand, sans-serif;
+    background-color: var(--antiflash-white);
+    margin: 0;
+}
+
+.navbar {
+    background-color:var(--night);
+    color: var(--antiflash-white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
+}
+
+.brand {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: var(--antiflash-white);
+    text-decoration: none;
+}
+
+.navbar-right .nav-link {
+    margin-left: 50px;
+    text-decoration: none;
+    padding: 30px 20px;
+    color: inherit;
+    padding: 5px 10px; 
+    transition: background-color 0.3s; 
+  }
+
+  .navbar-right .nav-link:hover {
+    background-color: var(--coral);
+    padding: 30px;
+    text-decoration: none;
+    transition: 0.3.s ease 0.2s;
+  }
+    
+
+  .footer {
+    background-color:var(--night); 
+    color: var(--antiflash-white);
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .footer-column {
+    flex: 1;
+    margin: 0 100px;
+  }
+  
+  .footer-column h3 {
+    margin-bottom: 10px;
+  }
+  /* if window is scaled smaller, make margin smaller */
+  @media (max-width: 900px) {
+    .footer-column {
+        margin: 0 20px;
+    }
+}
+
+
+/******************** reservation page *************** */
+
+.reservationTitle{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 120px;
+  font-weight: 600;
+  font-size: 1.2em;      
+}
+
+.reservation{
+  min-height: 50vh;
+  color: #eef0f2ff;
+  background: url(images/bg1.jpg); 
+  background-size: cover;
+}
+form{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+margin-top: 20px;
+gap: 1rem;
+}
+.input p{
+font-size: 20px;
+font: weight 50px;
+margin-bottom: 15px;
+}
+.first,.mid,.last{
+display: flex;
+align-items: center;
+width: 800px;
+gap: 15rem;
+}
+form .input{
+  width: 200px;
+}
+
+input, .input-i{
+outline: none;
+border: 1px solid #ef8354ff;
+width: 200px;
+background-color: transparent;
+display: flex;
+align-items: center;
+border-radius: 5px;
+color: #eef0f2ff;
+;
+}
+
+::placeholder{
+color: #eef0f2ff;
+}
+
+input{
+padding: 5px;
+}
+
+.input-i input{
+border: none;
+padding-right: 10px;
+}
+.input-i{
+padding-right: 20px;
+content:attr(placeholder);
+}
+select {
+width: 50%;
+padding: 5px;
+background-color: transparent;
+color: #eef0f2ff;
+border: 0;
+outline: none;
+cursor: pointer;
+}
+option {
+color: black;
+padding-top: 10px;
+} 
+::-webkit-calendar-picker-indicator{
+cursor: pointer;
+background-color: #ef8354ff;
+padding: 3px;
+border-radius: 3px;
+}
+.btn{
+background-color: #ef8354ff;
+border: none;
+color: #141414;
+padding: 10px 25px 10px 25px;
+font-size: 15px;
+border-radius: 10px;
+cursor: pointer;
+font-weight: 550;
+margin-bottom: 40px;
+margin-top: 20px;
+margin-right: 120px;
+}
+.btn:hover{
+opacity: 0.8;
+}
+
+/******************* end of reservation page  *******************/
