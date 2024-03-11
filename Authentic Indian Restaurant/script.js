@@ -9,7 +9,7 @@ list.forEach((el) =>{
         list.forEach((li)=>{
             li.classList.remove("active")
     
-        e.target.classList.add("acitve");
+        e.target.classList.add("active");
         })
 
         menu.forEach((el2)=>{
